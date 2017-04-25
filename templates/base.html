@@ -4,6 +4,7 @@
   <head>
      <title>Build a Blog</title>
 
+
      <style type="text/css">
         body {
             font-family: sans-serif;
@@ -46,12 +47,23 @@
             font-weight: bold;
             font-size: 20px;
         }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
 
+        li {
+            display: inline;
+        }
       </style>
       <body>
-
-<li><a href="/displaypost">Title</a></li>
-<li><a href="/displaypost">Blogpost</a></li>
+          <ul>
+              <ul id="menu">
+                <li><a href="/mainblog">Home</a></li>
+                <li> | </>
+                <li><a href="/newpost">New Post</a></li>
+              </ul>
 
     <div id="content">
     {% block content %}

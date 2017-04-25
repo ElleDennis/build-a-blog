@@ -1,12 +1,25 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Merde</h1>
+<!-- <div>{{new_title}}</div> -->
+
+
+<!-- {% for blogpost in blogposts %}
+
+       <div class="blogpost">
+           <div class="blogpost-title>{{blogpost.title}}</div>
+
+           <pre class="blogpost-body>{{blogpost.blogpost}}</pre>
+           <a href="/displaypost/{{ blogpost.key().id() }}">link</a>
+       </div>
+{% endfor %} -->
+
 
 <ul>
 {% for blogpost in blogposts %}
     <li>
-        {{blogpost.render() | safe }}
+        <a href="/displaypost/{{ blogpost.key().id() }}">{{blogpost.title }}</a>
+        <div class=""> {{ blogpost.blogpost }}</div>
     </li>
 {% endfor %}
 </ul>
