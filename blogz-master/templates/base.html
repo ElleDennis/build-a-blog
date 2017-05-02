@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Blogz</title>
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+            <div class="nav navbar">
+                <ul class="navleft">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/blog">All Posts</a></li>
+                    <li><a href="/blog/newpost">New Post</a></li>
+                </ul>
+
+                    <ul class="navright">
+                    <li><a href="/login">Log In</a></li>
+                    <li><a href="/logout">Log Out</a></li>
+                </ul>
+            </div>
+        {% block content %}
+
+        {% endblock %}
+    </body>
+</html>
