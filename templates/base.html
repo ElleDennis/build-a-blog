@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+     <title>Build a Blog</title>
+
+
+     <style type="text/css">
+        body {
+            font-family: sans-serif;
+            width: 800px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        .error {
+          color: red
+        }
+
+        label {
+          display: block;
+          font-size: 20px;
+        }
+
+        input[type=text] {
+            width: 400px;
+            font-size: 20px;
+            padding: 2px;
+        }
+
+        textarea {
+            width: 400px;
+            height: 200px;
+            font-size: 17px;
+            font-family: monospace;
+        }
+
+        input[type=submit] {
+            font-size: 24px;
+        }
+
+        .blogpost + .blogpost {
+            margin-top: 20px;
+        }
+
+        .blogpost-title {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+        }
+      </style>
+      <body>
+          <ul>
+              <ul id="menu">
+                <li><a href="/mainblog">Home</a></li>
+                <li> | </>
+                <li><a href="/newpost">New Post</a></li>
+              </ul>
+
+    <div id="content">
+    {% block content %}
+    {% endblock %}
+    </div>
+     </body>
+   </head>
+</html>
