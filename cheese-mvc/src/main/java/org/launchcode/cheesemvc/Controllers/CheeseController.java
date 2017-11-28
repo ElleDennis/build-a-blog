@@ -18,8 +18,6 @@ import java.util.ArrayList;
 @RequestMapping("cheese")
 public class CheeseController {
 
-    //static ArrayList<String> cheeses = new ArrayList<>();
-
     static ArrayList<Cheese> cheeses = new ArrayList<>();
     //the above between <> can be any objects. It is not a holder for data type.
     //Request path: /cheese
